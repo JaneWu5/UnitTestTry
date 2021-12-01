@@ -1,0 +1,6 @@
+mode: set
+UnitTestTry/http_client_demo/http_req.go:20.35,30.16 4 1
+UnitTestTry/http_client_demo/http_req.go:33.2,35.51 3 1
+UnitTestTry/http_client_demo/http_req.go:39.2,39.22 1 1
+UnitTestTry/http_client_demo/http_req.go:30.16,32.3 1 0
+UnitTestTry/http_client_demo/http_req.go:35.51,37.3 1 0

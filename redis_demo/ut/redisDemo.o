@@ -1,0 +1,10 @@
+mode: set
+UnitTestTry/redis_demo/redis_opt.go:14.63,17.53 2 1
+UnitTestTry/redis_demo/redis_opt.go:20.2,21.16 2 1
+UnitTestTry/redis_demo/redis_opt.go:24.2,24.41 1 1
+UnitTestTry/redis_demo/redis_opt.go:28.2,28.71 1 1
+UnitTestTry/redis_demo/redis_opt.go:31.2,31.13 1 1
+UnitTestTry/redis_demo/redis_opt.go:17.53,19.3 1 0
+UnitTestTry/redis_demo/redis_opt.go:21.16,23.3 1 0
+UnitTestTry/redis_demo/redis_opt.go:24.41,26.3 1 1
+UnitTestTry/redis_demo/redis_opt.go:28.71,30.3 1 0

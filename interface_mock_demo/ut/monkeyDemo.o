@@ -1,0 +1,9 @@
+mode: set
+UnitTestTry/interface_mock_demo/go_stub_demo.go:15.34,17.2 1 0
+UnitTestTry/interface_mock_demo/go_stub_demo.go:19.23,22.2 1 0
+UnitTestTry/interface_mock_demo/monkey_demo.go:16.29,18.16 2 1
+UnitTestTry/interface_mock_demo/monkey_demo.go:22.2,22.42 1 1
+UnitTestTry/interface_mock_demo/monkey_demo.go:18.16,20.3 1 0
+UnitTestTry/interface_mock_demo/app_demo.go:30.39,31.39 1 0
+UnitTestTry/interface_mock_demo/app_demo.go:34.2,34.11 1 0
+UnitTestTry/interface_mock_demo/app_demo.go:31.39,33.3 1 0
