@@ -3,6 +3,8 @@ package interface_mock_demo
 import (
 	"UnitTestTry/varys"
 	"bou.ke/monkey"
+	"context"
+	"golang.org/x/sync/errgroup"
 	"reflect"
 	"strings"
 	"testing"
@@ -43,3 +45,28 @@ func TestUser_GetInfo(t *testing.T) {
 // 社区中还有一个参考monkey库实现的gomonkey库，原理和使用过程基本相似，这里就不再啰嗦了。
 // 除此之外社区里还有一些其他打桩工具如GoStub（上一篇介绍过为全局变量打桩）等。
 // 熟练使用各种打桩工具能够让我们更快速地编写合格的单元测试，为我们的软件保驾护航。
+
+func TestChannel(t *testing.T) {
+	isSelfChan := make(chan bool, 1)
+	eg, _ := errgroup.WithContext(context.Background())
+	eg.Go(func() error {
+		defer close(isSelfChan)
+		isSelfChan <- true
+		return nil
+	})
+	eg.Go(func() error {
+		select {
+		case a := <-isSelfChan:
+			t.Logf("a: %v", a)
+		}
+		return nil
+	})
+	eg.Go(func() error {
+		select {
+		case b := <-isSelfChan:
+			t.Logf("b: %v", b)
+		}
+		return nil
+	})
+	eg.Wait()
+}
